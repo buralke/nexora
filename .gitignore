@@ -1,0 +1,47 @@
+# Secrets and local environment; example files can be committed.
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+**/google-services.json
+**/GoogleService-Info.plist
+
+# Dependencies and generated output
+node_modules/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+coverage/
+.coverage
+htmlcov/
+*.egg-info/
+
+# Local tools and temporary output
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
+tmp/
+temp/
+artifacts/
+
+# Local database data
+*.sqlite
+*.sqlite3

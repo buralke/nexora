@@ -9,7 +9,7 @@ Başlangıçta yerel Git deposu bulunmadığı, GitHub reposunun dal/commit içe
 
 ## Doğrulama
 
-Push sonucu, yerel ve uzak commit kimlikleri ile temiz çalışma ağacı üzerinden teslimde doğrulanır. GitHub CLI kurulu olmadığından Git kullanılıyor. İlk ağ denemesi sandbox içinde başarısız oldu; izinli ağ erişimiyle uzak repo okundu.
+56 dosya ilk commit `15319c8` ile GitHub main dalına gönderildi ve upstream tanımlandı. GitHub CLI kurulu olmadığından Git kullanıldı. Ağ ve Git metadata işlemleri izinli erişimle yürütüldü. Git sahiplik kontrolü için yalnızca proje yolu güvenilir olarak tanımlandı. Markdown satır sonu boşlukları mevcut dokümanları korumak için değiştirilmedi. Windows script yürütme kısıtlaması için kontrol komutunda yalnızca süreç düzeyinde Bypass kullanılır; kalıcı politika değiştirilmedi. Son senkronizasyon kontrolü teslimde yapılır.
 
 ## Devam
 

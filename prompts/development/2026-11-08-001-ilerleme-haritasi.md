@@ -1,4 +1,4 @@
-﻿# Geliştirme promptu — İlerleme haritası
+# Geliştirme promptu — İlerleme haritası
 
 - Tarih: 2026-11-08
 - Kaynak: Kullanıcı mesajı
@@ -33,3 +33,19 @@
 ## Uygulama bağlamı ve sonuç
 
 Kullanıcının tasarımla başlama tercihi ADR-0001 ile kaydedildi. İlerleme sırası project/PROGRESS_MAP.md altında tutulur. Tasarımın kendisi ve MVP sınırı sonraki adımlardır. Önceden mevcut UI_UX_GUIDELINES değişikliği bu işe dahil edilmedi.
+
+### 2026-11-08 — 2
+
+```text
+# Context from my IDE setup:
+
+## Active file: contracts/README.md
+
+## Open tabs:
+- README.md: contracts/README.md
+
+## My request:
+şimdi sırayla devam edelim
+```
+
+Devam sonucu: Ekran envanteri USER_FLOWS §18'e eklendi. TASK-0002 ve 2026-11-08-002 oturum kaydı bu adımı izler. Envanter kullanıcı incelemesine açık taslaktır.

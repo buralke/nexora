@@ -4,7 +4,7 @@
 - Güncel adım: 1 — Ürün ve ekran envanteri
 - Onaylanan yön: Önce tüm ürünün ekranlarını ve kullanıcı akışlarını tasarlamak.
 - Karar: [ADR-0001](decisions/ADR-0001-once-urun-tasarimi.md)
-- Takip: [TASK-0001](tasks/TASK-0001-ilerleme-haritasi.md)
+- Takip: [TASK-0002](tasks/TASK-0002-ekran-envanteri.md)
 
 Bu dosya birlikte ilerleme sıramızı ve aşama çıkışlarını izler. Gereksinimler [PRD](../docs/PRD.md), akışlar [USER_FLOWS](../docs/USER_FLOWS.md), görsel kurallar [UI_UX_GUIDELINES](../docs/UI_UX_GUIDELINES.md) içinde tutulur. Ayrıntılı teknik geliştirme taslağı [DEVELOPMENT_ROADMAP](../docs/DEVELOPMENT_ROADMAP.md) referanstır; oradaki sprint süreleri ve teknoloji önerileri bu planla onaylanmış olmaz.
 
@@ -16,7 +16,7 @@ Her adımda önce somut bir taslak hazırlanır, kullanıcı geri bildirimi alı
 
 | Adım | Yapılacak iş | Somut çıktı ve bitiş koşulu | Durum |
 |---|---|---|---|
-| 1 | Tüm ürünü roller, modüller ve ekranlar açısından haritalamak | Her ekranın amacı, aktörü, giriş/çıkış noktası ve kaynak gereksinimi belli; eksikler ve açık sorular listelenmiş | Sıradaki |
+| 1 | Tüm ürünü roller, modüller ve ekranlar açısından haritalamak | Her ekranın amacı, aktörü, giriş/çıkış noktası ve kaynak gereksinimi belli; eksikler ve açık sorular listelenmiş | Taslak hazır; kullanıcı incelemesi |
 | 2 | Bilgi mimarisi ve ana navigasyonu belirlemek | Ana sayfa, sekmeler, profil, bildirim ve rol bazlı yönetim girişleri kullanıcıyla netleşmiş; her ekran erişilebilir | Bekliyor |
 | 3 | Uçtan uca kullanıcı akışlarını detaylandırmak | Başarılı, iptal, geri dönüş, izin reddi, boş, yükleniyor ve hata durumları ilgili akışlara işlenmiş | Bekliyor |
 | 4 | Tüm ekranların düşük detaylı taslaklarını çizmek | Adım 1 envanterindeki her ekran ve kritik durum için yerleşim taslağı var; akışlarla tutarlı | Bekliyor |
@@ -49,7 +49,7 @@ Aşağıdaki alanlar mevcut belgelerden alınan tasarım inceleme başlıklarıd
 | Mesaj ve bildirim | Konuşma listesi, sohbet, gönderim/bağlantı durumları, bildirim merkezi ve tercihler | USER_FLOWS §11–12 |
 | Operasyon ve destek | Şikâyet inceleme, yaptırım, başvuru onayı, destek ve yetkiye bağlı yönetim ekranları | USER_FLOWS §13; USER_ROLES §3.5–3.7 |
 
-Kaynakların tamamı `docs/` altındadır. Ayrıntılı ekran envanteri ilk adımda mevcut UX belgesine hedefli olarak eklenecek; ayrı bir rakip gereksinim listesi oluşturulmayacaktır.
+Kaynakların tamamı `docs/` altındadır. Ayrıntılı ekran envanteri [USER_FLOWS §18](../docs/USER_FLOWS.md#18-tüm-ürün-için-ekran-envanteri--inceleme-taslağı) içine hedefli olarak eklendi; ayrı bir rakip gereksinim listesi oluşturulmayacaktır.
 
 ## Her ekran için kayıt alanları
 
@@ -71,4 +71,4 @@ Ekran kimliği ve adı; amacı; aktör/erişim koşulu; kaynak gereksinim; göst
 2. Eksik ekranları ve erişim koşullarını birlikte incelemek.
 3. Ana sayfa ile navigasyon için seçenekler hazırlamak; seçimden sonra akışları detaylandırmak.
 
-Henüz ekran tasarımı veya prototip üretilmedi. Bu oturumun çıktısı ilerleme planı ve tasarımla başlama kararıdır.
+Henüz ekran tasarımı veya prototip üretilmedi. Ekran envanteri taslağı hazır; kullanıcı incelemesi bekleniyor. Son çalışma: [ekran envanteri](sessions/2026-11-08-002-ekran-envanteri.md).

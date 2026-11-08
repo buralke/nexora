@@ -35,6 +35,6 @@ Genel mimaride TBD görünen bazı tercihler ayrıntılı belgelerde öneri olar
 
 ## Son çalışma ve sonraki adım
 
-Son çalışma: [İlerleme haritası](sessions/2026-11-08-001-ilerleme-haritasi.md). Repo: [buralke/nexora](https://github.com/buralke/nexora). Çalışma başında ve push öncesinde [repo kontrolü](REPOSITORY.md) uygulanır.
+Son çalışma: [Ekran envanteri](sessions/2026-11-08-002-ekran-envanteri.md). Repo: [buralke/nexora](https://github.com/buralke/nexora). Çalışma başında ve push öncesinde [repo kontrolü](REPOSITORY.md) uygulanır.
 
-Sıradaki adım: Tüm ürünün ayrıntılı ekran envanterini hazırlamak; sonra ana sayfa ve navigasyonu birlikte netleştirmek. Teknik kurulum ve MVP seçimi tasarım incelemesini takip edecek. Mevcut kullanıcı değişikliği olan `docs/UI_UX_GUIDELINES.md` sonundaki ek `2` bu çalışmanın commit kapsamı dışında korunuyor.
+USER_FLOWS §18 altında tüm ürünün ekran envanteri taslağı hazır. Sıradaki adım: Envanteri kullanıcıyla incelemek; ardından ana sayfa ve navigasyonu birlikte netleştirmek. Teknik kurulum ve MVP seçimi tasarım incelemesini takip edecek. Mevcut kullanıcı değişikliği olan `docs/UI_UX_GUIDELINES.md` sonundaki ek `2` bu çalışmanın commit kapsamı dışında korunuyor.

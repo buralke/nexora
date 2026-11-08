@@ -4,6 +4,8 @@ AI destekli fal deneyimini sosyal etkileşimle birleştiren mobil platformun ça
 
 Proje arayüz prototipleme aşamasındadır. [Flutter mobil demosu](apps/mobile/README.md) örnek verilerle çalışır; backend ve gerçek servisler henüz bağlı değildir. Nihai MVP kapsamı ve sağlayıcı seçimleri açıktır.
 
+Yeni gelenler için: [Repo rehberi — Aradığım dosya nerede?](REPO_GUIDE.md)
+
 ## Başlangıç noktaları
 
 1. [Proje tanımı ve sınırları](project/PROJECT_CHARTER.md)

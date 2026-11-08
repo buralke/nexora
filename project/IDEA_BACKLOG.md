@@ -2,7 +2,7 @@
 
 Son güncelleme: 2026-11-08
 
-Bu dosya tartışılan fikirleri unutmamak için tutulur. Fikirler onaylanmış gereksinim, MVP kapsamı veya geliştirme taahhüdü değildir. Seçilen fikirler ilgili ürün belgesine ve gerektiğinde karar kaydına aktarılır.
+Bu dosya tartışılan fikirleri unutmamak için tutulur. İlk üç kayıt fikir aşamasındadır. IDEA-004 için bazı ürün kuralları karar kaydına bağlanmıştır; bu, MVP kapsamı veya geliştirme taahhüdü değildir. Seçilen fikirler ilgili ürün belgesine ve gerektiğinde karar kaydına aktarılır.
 
 Kaynak: [Fikirleri saklama talebi](../prompts/development/2026-11-08-003-urun-fikirleri.md). İlk üç fikir asistan tarafından önerildi; kullanıcı olumlu bulup saklanmasını istedi. Dördüncü fikir kullanıcıdan geldi. 2026-11-08 devamında kullanıcı dört fikrin aynı havuzda birleştirilmesini istedi.
 
@@ -35,33 +35,53 @@ Kaynak: [Fikirleri saklama talebi](../prompts/development/2026-11-08-003-urun-fi
 
 ## IDEA-004 — Kafede check-in ile etkileşim
 
-- Durum: Fikir havuzuna alındı; uygulama/MVP kararı yok.
-- Kaynak: Kullanıcı önerisi — “mesela bir kafeye gittim kafede check-in yaptım kafede check-in yapmış kişiler arasında bir etkileşim başlatmak nasıl fikir”.
-- Amaç: Aynı kafede bulunan ve check-in yapan kişiler arasında etkileşim başlatmak.
-- Kullanıcının tarif ettiği çekirdek deneyim: Kafeye git → check-in yap → aynı kafede check-in yapmış kişilerle etkileşim başlat.
+- Durum: Ürün davranışları netleştirildi. Uygulama ve MVP kapsamı ayrıca belirlenecek.
+- Amaç: Aynı kafede bulunan kişilere ortak sohbet ve isteğe bağlı bire bir etkileşim sunmak.
+- Karar kaydı: [ADR-0004](decisions/ADR-0004-kafe-check-in-kurallari.md).
 
-### Konuşmada geliştirilen öneriler — henüz onaylanmadı
+### Kafeye giriş ve süre
 
-- Check-in'den ayrı “Burada tanışmaya açığım” görünürlük tercihi.
-- Kişiye sohbet daveti veya ortak fal kartı gönderme; karşılıklı kabul sonrası konuşma.
-- Sohbet, arkadaşlık veya flört niyeti seçimi; romantik eşleşmenin zorunlu olmaması.
-- Süreli check-in, kolay kapatma ve ayrılınca görünürlüğün sona ermesi; masa veya kesin konum göstermeme.
-- Tekrarlı davet sınırı, engelleme ve şikâyet mekanizmaları.
-- Küçük bir deneme olarak tek kafede isteğe bağlı check-in fikri.
+- Kafe deneyiminin tamamı 18 yaş ve üzeri kullanıcılara açık. Haritada listelenen tüm kafelerde işletme kaydı aranmadan check-in yapılabilir.
+- Kullanıcı kafeyi haritadan seçer, varsa QR kodunu okutur veya `beeg-38-anyrt` gibi benzersiz mekân kodunu girer. Üç yöntemde de kafenin haritadaki konumuna en fazla 100 metre uzakta olmak gerekir. Konum yeterince kesin okunamazsa yeniden denemesi istenir.
+- Kullanıcının aynı anda tek aktif check-in'i olabilir. Check-in 2 saat sürer. Erken bitirilebilir veya yakınlık yeniden doğrulanarak uzatılabilir. Başka bir kafeye geçmeden önce kullanıcı mevcut check-in'i bitirmeyi onaylar.
+- Sosyal akışta paylaşım ayrı ve isteğe bağlıdır. “Akışta paylaş” varsayılan olarak kapalıdır.
 
-Bunlar asistanın tartışma önerileridir; kullanıcı kayıt altına alınmasını istedi, ayrıntılı iş kurallarını veya pilotu onaylamadı.
+### Kafe alanı ve etkileşim tercihleri
 
-### Açık sorular
+- Aktif check-in kafenin uygulama içindeki alanını açar. Kullanıcı ortak sohbeti kişi listesinde görünmeden okuyabilir. Yazmak için “Sohbete katıl” adımını tamamlar. Görünen adı mesajının yanında yer alır. Bu adım kullanıcıyı eşleşmeye veya bire bir sohbete dahil etmez.
+- Eşleşmeye kapalı kullanıcı kafenin kişi listesinde görünmez. Görünen kişilerin kartında ad, fotoğraf ve izin verilen etkileşimler yer alır. Karta dokununca herkese açık profil açılır. Masa, kesin konum ve özel fal geçmişi gösterilmez.
+- Check-in sırasında eşleşme, ilk mesaj ve oyun daveti tercihleri ayrı seçilir. Tercihler aktif check-in sırasında değiştirilebilir.
 
-- Kişileri görüp bireysel davet göndermek mi, kafenin ortak sohbet alanına katılmak mı, ikisi birlikte mi? Kullanıcı henüz seçim yapmadı.
-- Mekânda bulunma nasıl doğrulanır? Konum, QR veya başka bir yöntem henüz seçilmedi.
-- Check-in süresi, ayrılmayı algılama ve görünürlüğü kapatma nasıl işleyecek?
-- Hangi profil bilgileri görünür; yaş uygunluğu, davet/engelleme ve mesaj erişimi nasıl yönetilir?
-- Mekândan ayrıldıktan sonra kabul edilmiş konuşma sürer mi?
-- Check-in/konum verilerinin saklama ve silme sınırları ne olur?
-- Mekân katılımı veya işletmeyle ortaklık gerekir mi? Henüz ortaklık/servis kararı yok.
+| Tercih | Seçenekler |
+|---|---|
+| Eşleşme | Açığım · Kapalıyım |
+| İlk mesaj | İkimiz de başlatabiliriz · Yalnızca ben başlatırım · Kapalıyım |
+| Oyun daveti | İkimiz de gönderebiliriz · Yalnızca ben gönderirim · Kapalıyım |
 
-İlgili mevcut alanlar: USER_FLOWS §9 ve §11; yeni check-in akışı mevcut gereksinimlere henüz eklenmedi.
+- İlk mesaj karşılıklı eşleşmeden sonra, gönderenin ve alıcının tercihleri izin verdiğinde atılabilir. “Yalnızca ben başlatırım” seçen kişi ilk mesaj alamaz. Kendisi sohbet açarsa karşı taraf yanıt verebilir. Bire bir mesajlara normal kullanımda yalnızca iki katılımcı erişebilir; şikâyete eklenen mesajlar yetkili inceleme kapsamında değerlendirilir.
+- Oyun daveti için eşleşme gerekmez. Eşleşmeye kapalı bir kullanıcı, davet almaya açıksa ortak sohbetteki mesajı üzerinden davet alabilir. Daveti kabul etmek yalnızca oyunu açar.
+- Tercih değişikliği hemen uygulanır ve yeni tercihin izin vermediği bekleyen davetler kapanır. Engelleme, Premium durumundan bağımsız olarak aradaki mesajlaşmayı, oyunu ve bekleyen davetleri kapatır. Şikâyete nedeni ve bildirilen hesap bilgisi eklenir. Kullanıcı şikâyetine mesaj içeriği ekleyebilir. Bu, tüm özel konuşmalara genel erişim sağlamaz; kanıt seçimi, yetkili inceleme ve saklama kuralları ayrıca tasarlanacak.
+
+### Check-in sonrası ve Premium
+
+- İki kişiden birinin check-in'i sona erdiğinde aktif kafe görünürlüğü biter ve o check-in üzerinden yeni davet gönderilemez.
+- Check-in bitişinde taraflardan en az biri Premium ise mevcut bire bir etkileşim iki taraf için sürer. Ancak sonradan Premium üyeliği biten kullanıcı için aşağıdaki kişisel erişim kuralı önceliklidir. Bekleyen eşleşme ve oyun istekleri kabul edilebilir. Başlamış sohbetler ve oyunlar devam eder. Henüz ilk mesaj gönderilmediyse mevcut sohbet izinleri uygulanır.
+- **2026-11-08 güncellemesi — 2 saatlik kurtarma:** Devam hakkı olmayan kullanıcıya Premium ile sohbetini kurtarabileceği bildirilir ve 2 saat tanınır. Önceki otomatik bitişte 24 saat ve manuel bitişte teklifi geçince hemen kapatma kuralları bu güncellemeyle değiştirilir. Devam hakkı sona erdiğinde sohbet hemen kilitlenir: eski mesajlar okunamaz, yeni mesaj gönderilemez. İki saatlik kurtarma süresinde de kilit sürer; Premium yenilenince erişim açılır. İki saat dolması erişimin ilk kapandığı an değildir.
+- Premium üyeliği sonradan bittiğinde de 2 saat kurtarma süresi verilir. Kullanıcının 2026-11-08 devam kararına göre karşı taraf hâlâ Premium olsa bile üyeliği biten kişi bu gerekçeyle devam edemez; kendi Premium üyeliğini yenilemesi gerekir. Üyelik bittiğinde sohbet erişimi hemen kilitlenir; iki saatte yenilenmezse kilit devam eder. Tekrar Premium olduğunda erişim geri verilir. Erişim kapatma veri silme değildir; saklama/silme politikası ayrıca belirlenir. Engelleme ve güvenlik kısıtları Premium ile aşılmaz.
+- **Açık:** Oyunların kurtarma süresindeki durumu (son yanıt sohbet erişimini netleştirdi); ilk check-in bitişindeki kilidin de sonradan Premium ile açılıp açılmayacağı; sürenin kesin başlangıç olayı ve oyun durumunun korunması.
+
+### Özel geçmiş ve yıl sonu özeti
+
+- Kullanıcının check-in geçmişi yalnızca kendisine görünür. Yıl sonu özeti kafe ziyaretlerini, fal istatistiklerini ve tamamlanan ortak oyunları kapsar. Check-in uzatmak yeni ziyaret sayılmaz.
+- Özet özeldir. Kullanıcı seçtiği kartı önizleyip sosyal akışta paylaşabilir.
+- Tek bir check-in kaydı veya tüm geçmiş silinebilir. Özel özet kalan kayıtlardan yeniden hesaplanır. Silme sırasında “Bu kaydı kullanan paylaşımları da kaldır” seçeneği sunulur. Kullanıcı seçerse ilgili check-in paylaşımları ve özet kartları akıştan kaldırılır.
+
+### Uygulama öncesinde netleştirilecekler
+
+- Mesafe: Önceki kayıt 100 metre. Asistanın yeni önerisi 50 metre; kullanıcı henüz onaylamadı. Konum doğruluk eşiği ve komşu kafelerle saha doğrulaması birlikte ele alınacak.
+- Harita ve mekân verisi sağlayıcısı, konum ölçümünün doğruluk eşiği ve QR/mekân kodu yönetimi.
+- Check-in ve konum verilerinin saklama süreleri, tekrar eden davetlerin sınırları ve şikâyetlerin işlenmesi.
+- Kafe deneyiminin sürüm kapsamı ve uygulama akışları.
 
 ## Dört fikrin birlikte oluşturabileceği deneyim
 
@@ -74,4 +94,4 @@ Bu bağlantı bir ürün önerisidir; dört fikrin tek özellik olarak uygulanma
 | IDEA-003 — Fal arkadaşı | İki kişinin ortak fal/kart deneyimi | Mevcut arkadaşla veya karşılıklı kabul edilen kafe davetiyle başlayabilir |
 | IDEA-004 — Kafede check-in | Aynı mekânda karşılaşma bağlamı | Sohbet kartına, ortak ritüele veya fal arkadaşlığına giriş olabilir |
 
-Örnek birleşik yolculuk: Kullanıcı kafede check-in yapar → ayrıca görünür olmayı seçer → uygun kişiye bir sohbet kartıyla davet gönderir → karşılıklı kabul sonrası ortak kart deneyimi yaşanır → iki taraf isterse sohbet sürer. Bu akış keşif taslağıdır; konum, yaş, görünürlük ve mesajlaşma kararları verilmeden uygulanmaz.
+Örnek birleşik yolculuk: Kullanıcı check-in sırasında etkileşim tercihlerini seçer → oyun daveti almaya açık bir kişiye ortak kart daveti gönderir → davet kabul edilirse birlikte oynarlar → karşılıklı eşleşme ve ilk mesaj izni varsa sohbet başlatılabilir. Bu örnek, yukarıdaki check-in ve etkileşim kurallarını birleştirir.

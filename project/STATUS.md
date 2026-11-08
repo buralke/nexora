@@ -35,6 +35,10 @@ Genel mimaride TBD görünen bazı tercihler ayrıntılı belgelerde öneri olar
 
 ## Son çalışma ve sonraki adım
 
-Son çalışma: [Sıvı cam tasarımı](sessions/2026-11-08-004-sivi-cam.md). Repo: [buralke/nexora](https://github.com/buralke/nexora). Çalışma başında ve push öncesinde [repo kontrolü](REPOSITORY.md) uygulanır.
+Son çalışma: [Ürün fikirlerini saklama](sessions/2026-11-08-005-urun-fikirleri.md). Repo: [buralke/nexora](https://github.com/buralke/nexora). Çalışma başında ve push öncesinde [repo kontrolü](REPOSITORY.md) uygulanır.
 
 İlk arayüz dilimi sıvı cam yönünde yenilendi: [ADR-0003](decisions/ADR-0003-sivi-cam.md). Ortak cam paneller, yüzen gezinme ve lacivert/lila/sis yeşili paleti uygulandı. Sıradaki adım: Çalışan ekranları kullanıcıyla incelemek; ardından onboarding/giriş, profil düzenleme ve fal geçmişi görünümlerini kodlamak. Gerçek servisler ve MVP kapsamı açık. `docs/UI_UX_GUIDELINES.md` sonundaki kullanıcıya ait ek `2` korunuyor ve commit dışında.
+
+## Ürün tartışması
+
+[Fikir havuzunda](IDEA_BACKLOG.md) Faldan sohbete, Küçük ritüeller ve Fal arkadaşı saklandı. Kullanıcı olumlu buldu; uygulama/MVP kararı yok. Güncel konuşma: Kullanıcının match fikrinin ayrıntılarını dinlemek. Teknik sıradaki işler bu tartışmayla onaylanmış veya değiştirilmiş sayılmaz.

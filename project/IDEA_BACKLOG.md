@@ -2,7 +2,7 @@
 
 Son güncelleme: 2026-11-08
 
-Bu dosya tartışılan fikirleri unutmamak için tutulur. İlk üç kayıt fikir aşamasındadır. IDEA-004 için bazı ürün kuralları karar kaydına bağlanmıştır; bu, MVP kapsamı veya geliştirme taahhüdü değildir. Seçilen fikirler ilgili ürün belgesine ve gerektiğinde karar kaydına aktarılır.
+Bu dosya tartışılan fikirleri unutmamak için tutulur. IDEA-001–003 ve IDEA-005 fikir aşamasındadır. IDEA-006 için prototip akışı ve günlük ikinci bakış, IDEA-007 için özetin kullanıcı notlarına dayanması netleştirildi; diğer ayrıntılar taslaktır. IDEA-004 için bazı ürün kuralları karar kaydına bağlanmıştır; bu, MVP kapsamı veya geliştirme taahhüdü değildir. Seçilen fikirler ilgili ürün belgesine ve gerektiğinde karar kaydına aktarılır.
 
 Kaynak: [Fikirleri saklama talebi](../prompts/development/2026-11-08-003-urun-fikirleri.md). İlk üç fikir asistan tarafından önerildi; kullanıcı olumlu bulup saklanmasını istedi. Dördüncü fikir kullanıcıdan geldi. 2026-11-08 devamında kullanıcı dört fikrin aynı havuzda birleştirilmesini istedi.
 
@@ -95,3 +95,40 @@ Bu bağlantı bir ürün önerisidir; dört fikrin tek özellik olarak uygulanma
 | IDEA-004 — Kafede check-in | Aynı mekânda karşılaşma bağlamı | Sohbet kartına, ortak ritüele veya fal arkadaşlığına giriş olabilir |
 
 Örnek birleşik yolculuk: Kullanıcı check-in sırasında etkileşim tercihlerini seçer → oyun daveti almaya açık bir kişiye ortak kart daveti gönderir → davet kabul edilirse birlikte oynarlar → karşılıklı eşleşme ve ilk mesaj izni varsa sohbet başlatılabilir. Bu örnek, yukarıdaki check-in ve etkileşim kurallarını birleştirir.
+
+## IDEA-005 — Fincanda sen ne gördün?
+
+- Durum: Fikir havuzunda. Ücretsiz ve Premium ayrımı taslak.
+- Ücretsiz deneyim: Kullanıcı yorumdan önce fincan fotoğrafında bir şekli işaretler ve neye benzettiğini yazar. Fal yorumu bu şekilden başlar.
+- Premium önerisi: Kullanıcı birden fazla şekli işaretleyebilir ve şekillerin aynı yorumda nasıl bağlandığını okuyabilir. Örneğin kuş ve yol tek bir hikâyede buluşur.
+
+## IDEA-006 — Bir fincan, üç bakış
+
+- Durum: Üç ekranlı prototip akışı seçildi. Ücretsiz ikinci bakış kullanıcı hesabı başına günde bir kez; yayın kapsamı ayrıca belirlenecek.
+- Ücretsiz deneyim: Kullanıcı eğlenceli, sembolik veya düşündürücü tarzlardan birini seçer ve o tarzda tam bir fal yorumu okur.
+- Premium önerisi: Kullanıcı aynı fincan için diğer iki bakışı da açabilir. İstisna: Günlük ücretsiz ikinci bakış hakkı varsa ikinci yorum ücretsizdir; bu hak ömür boyu yalnızca ilk deneme ile sınırlı değildir. [ADR-0005](decisions/ADR-0005-gunluk-ikinci-bakis.md).
+- Teklif anı: Tam ücretsiz yorumdan sonra ikinci bakış seçeneği gösterilir. Günlük hakkı bulunan kullanıcı ücretsiz ikinci yorumu okuduktan sonra üçüncü bakışı seçerse Premium teklifi açılır. Günlük hak daha önce kullanıldıysa ikinci bakış düğmesinin davranışı ve teklif anı ayrıca netleştirilecek.
+
+### Üç ekranlı prototip
+
+| Ekran | Kullanıcının gördüğü | Eylemler |
+|---|---|---|
+| 1. Fal sonucu | Seçilen tarzda tam ücretsiz yorum. Örnekte sembolik bakış, fincandaki kuşu bir haberle ve açık yolu yeni bir seçenekle ilişkilendirir. | “Bu fincana başka bir gözle bak”, “Falı kaydet”. İkinci bakışın günde bir kez ücretsiz olduğu ve günlük hak durumu gösterilir. |
+| 2. İkinci bakış | Aynı fincanın ikinci tarzda tam yorumu. Örnekte eğlenceli bakış, aynı kuşu sabırsız bir haberciye ve yolu kısa bir kaçamağa benzetir. | “Üçüncü bakışı gör”, “Falı kaydet ve çık”. |
+| 3. Premium teklifi | Okunan iki bakış ve Premium ile açılacak üçüncü bakış gösterilir. Örnekte üçüncü bakış düşündürücüdür. | “Üçüncü bakışı Premium ile aç”, “Falı kaydet ve çık”. |
+
+Üç tarz aynı fincandaki aynı sembol temelini korur; fark anlatım ve bakış açısıdır. Birbirini çürüten tahminler üretilmez ve hiçbiri kesin gelecek bilgisi olarak sunulmaz.
+
+Açık: Günlük hakkın sıfırlanma saat dilimi/saati, tüketim anı, başarısız işlem telafisi ve önceden açılmış yorumun yeniden görüntülenmesi. Günlük hak hesap düzeyinde ele alındı; fincan başına yeni günlük hak verilmez.
+
+İlk bakış kullanıcı tarafından seçilir. Ekran taslağındaki sembolik, eğlenceli ve düşündürücü sıralaması örnektir. İlk denemede ikinci bakışı kaç kişinin açtığı ve iki yorum arasındaki farkı anlamlı bulup bulmadığı değerlendirilir.
+
+## IDEA-007 — Falıma geri dön
+
+- Durum: Fikir havuzunda. Ücretsiz ve Premium ayrımı taslak.
+- Ücretsiz deneyim: Kullanıcı ilgisini çeken yorumu kaydeder, bir hafta sonra isteğe bağlı hatırlatma alır ve özel bir not ekleyebilir.
+- Premium önerisi: Kullanıcı kendi notlarında tekrar eden temaları aylık özel bir özette görür. Özet kullanıcının yazdıklarına dayanır; falda anlatılan olayların gerçekleştiğini varsaymaz. Not yoksa yaşanmış olay uydurulmaz. Örneğin “Bu ay üç notunda yeni başlangıçlardan bahsettin.”
+
+## Üç fikrin ortak fal akışı
+
+Kullanıcı fincandaki şekli işaretler → seçtiği tarzda tam yorumunu okur → isterse ikinci bakışı dener → ilgisini çeken yorumu kaydeder ve daha sonra not ekler. Günlük ücretsiz ikinci bakış hakkı varsa Premium teklifi bu yorumdan sonra, üçüncü bakış seçildiğinde gösterilir. Günlük hak tükenmişken teklif akışı açık kalır. Şekil işaretleme ve özel not yazma sırasında üyelik ekranı açılmaz. Bu akış bir ürün önerisidir.

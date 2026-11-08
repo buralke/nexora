@@ -190,3 +190,41 @@ kilitlensin premium yenilenince açılsın
 ```
 
 Sonuç: Sohbet hemen kilitlenir; iki saatlik kurtarma sırasında okunamaz veya mesaj gönderilemez. Premium yenilenince açılır. Oyunların bu süredeki davranışı son yanıtın kapsamı dışında açık bırakıldı.
+
+### 2026-11-08 — Fal deneyimi ve Premium fikirleri
+
+> şimdi burayı bu halde bırakalım yeni şeyler arayalım
+
+> aslında üçüde tartışalım ancak şöyle premiuma teşvik etme üzerine bir çalışmayla beraber entegre edelim
+
+> hadi ekleyelim bakalım
+
+Sonuç: IDEA-005–007 ve ortak fal akışı fikir havuzuna eklendi. Tek seferlik ücretsiz ikinci bakış denemesi başlangıç önerisi olarak kaydedildi.
+
+### 2026-11-08 — Üç bakış ekran taslağı
+
+> okkkey nasıl devam edelim sence
+
+> dediğin gibi yapalım
+
+> ekle bakalım dosyaya
+
+Sonuç: Üç ekranlı prototip [IDEA-006](../../project/IDEA_BACKLOG.md) altında kaydedildi.
+
+### 2026-11-08 — Günlük ikinci bakış ve tutarlılık
+
+```text
+**“Tek seferlik ücretsiz ikinci bakış”** hesap başına mı, fincan başına mı? Premium teklifinin nerede başlayacağını bu belirliyor.  aslında şöyle günde bir kere IDEA-006’da “diğer iki bakış Premium” ifadesi, ücretsiz ikinci bakış denemesiyle birlikte **“ilk denemede istisna”** olarak açıklanmalı.  okey Üç tarz, aynı sembollere farklı anlatımlar getirmeli; birbirini çürüten tahminler üretmemeli. Aylık özet de kullanıcının notlarına dayanmalı, olayların gerçekleştiğini varsaymamalı.okey
+```
+
+Sonuç: Günlük ücretsiz ikinci bakış hesap düzeyinde kaydedildi; eski ömür boyu tek deneme notu değiştirildi. Kullanıcının günlük sıklık talimatı doğrultusunda istisna her gün kullanılabilir hak olarak açıklandı. Tarz tutarlılığı ve not temelli özet ADR-0005'e işlendi. Saat dilimi/sıfırlama ve hak tükenince teklif davranışı açık.
+
+### 2026-11-08 — Günlük ikinci bakış kayıtlarının Git teslimi
+
+Kullanıcı talebi (özgün metin):
+
+```text
+pushla
+```
+
+Sonuç: IDEA-005–007, ADR-0005, durum ve 014–016 oturumları birlikte Git teslimine alındı.

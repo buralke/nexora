@@ -710,3 +710,9 @@ Operasyon ekranlarının mobil uygulamadan mı ayrı yönetim arayüzünden mi s
 Envanter ekran ailelerini kapsar; her fal türünün farklı girdi alt adımları, ödeme kanalının zorunlu ara ekranları ve operasyonun detay formları ilgili açık karar çözülünce ayrıştırılabilir. Ayrı ekran sayısı tasarım sonucu değişebilir.
 
 İlk inceleme sorusu: Ana gezinme fal deneyimi etrafında mı, sosyal akış etrafında mı kurulmalı? Mevcut UX belgesindeki beş sekme önerisi onaylanmış değildir. Navigasyon kararıyla bu envanterdeki giriş noktaları kesinleştirilecek; ardından ayrıntılı akış ve yerleşim taslaklarına geçilecek.
+
+## 19. Onaylanan ana gezinme ve ilk kod dilimi
+
+2026-11-08: Kullanıcı Ana Sayfa / Fal / Keşfet / Sosyal / Profil alt gezinmesini, üstte mesaj ve bildirim girişlerini, Keşfet içinde eşleşme girişini uygun buldu ve arayüz kodlamasına geçilmesini istedi. [ADR-0002](../project/decisions/ADR-0002-navigasyon-ve-arayuz.md).
+
+A01 ana sayfa; F01–F04 örnek fal akışı; A02 keşif; S01–S02 yerel demo gönderileri; P01 profil ana görünümü; B01 ve N01 boş durumları kodlandı. T01/M01/E01 ve P03 gibi alt girişler şimdilik bilgilendirme görünümüdür; tam iş akışı değildir. Henüz gerçek hesap/AI/ödeme veya kalıcı veri yoktur. K1'in ana gezinme kısmı çözüldü; misafir erişimi ve arama ihtiyacı açık. Diğer K kararları ve envanterdeki ekranlar tek tek izlenir.

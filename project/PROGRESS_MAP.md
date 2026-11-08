@@ -1,10 +1,10 @@
 # Adım adım ilerleme haritası
 
 - Güncelleme: 2026-11-08
-- Güncel adım: 1 — Ürün ve ekran envanteri
+- Güncel adım: Onaylanan navigasyon üzerinden ilk kodlanmış arayüz diliminin incelemesi
 - Onaylanan yön: Önce tüm ürünün ekranlarını ve kullanıcı akışlarını tasarlamak.
 - Karar: [ADR-0001](decisions/ADR-0001-once-urun-tasarimi.md)
-- Takip: [TASK-0002](tasks/TASK-0002-ekran-envanteri.md)
+- Takip: [TASK-0003](tasks/TASK-0003-mobil-arayuz.md)
 
 Bu dosya birlikte ilerleme sıramızı ve aşama çıkışlarını izler. Gereksinimler [PRD](../docs/PRD.md), akışlar [USER_FLOWS](../docs/USER_FLOWS.md), görsel kurallar [UI_UX_GUIDELINES](../docs/UI_UX_GUIDELINES.md) içinde tutulur. Ayrıntılı teknik geliştirme taslağı [DEVELOPMENT_ROADMAP](../docs/DEVELOPMENT_ROADMAP.md) referanstır; oradaki sprint süreleri ve teknoloji önerileri bu planla onaylanmış olmaz.
 
@@ -71,4 +71,8 @@ Ekran kimliği ve adı; amacı; aktör/erişim koşulu; kaynak gereksinim; göst
 2. Eksik ekranları ve erişim koşullarını birlikte incelemek.
 3. Ana sayfa ile navigasyon için seçenekler hazırlamak; seçimden sonra akışları detaylandırmak.
 
-Henüz ekran tasarımı veya prototip üretilmedi. Ekran envanteri taslağı hazır; kullanıcı incelemesi bekleniyor. Son çalışma: [ekran envanteri](sessions/2026-11-08-002-ekran-envanteri.md).
+Kullanıcı navigasyonu uygun buldu ve arayüz kodlamasını başlattı. İlk Flutter dilimi hazır; bütün ekranlar tamamlanmadı. Son çalışma: [mobil arayüz](sessions/2026-11-08-003-mobil-arayuz.md).
+
+## 2026-11-08 — Kullanıcı talimatıyla kodlayarak tasarıma geçiş
+
+[ADR-0002](decisions/ADR-0002-navigasyon-ve-arayuz.md) ile Ana Sayfa/Fal/Keşfet/Sosyal/Profil, üst mesaj ve bildirimler, Keşfet içinde eşleşme girişi onaylandı. Önce tüm tasarım belgelerini bitirme sırası yerini ekranları kodlayıp değerlendirmeye bıraktı. Tablodaki diğer çıktılar ve açık kararlar izlenmeye devam eder; tüm adımlar tamamlanmış sayılmaz. İlk UI dilimi apps/mobile altındadır, gerçek servisler bağlı değildir.

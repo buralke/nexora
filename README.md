@@ -2,7 +2,7 @@
 
 AI destekli fal deneyimini sosyal etkileşimle birleştiren mobil platformun çalışma alanı. **Nexora şu an klasör/çalışma adıdır; nihai marka adı onaylanmış değildir.**
 
-Proje planlama aşamasındadır. Bu iskelet çalışan uygulama, kurulmuş servis veya kesinleşmiş teknoloji seçimi içermez.
+Proje arayüz prototipleme aşamasındadır. [Flutter mobil demosu](apps/mobile/README.md) örnek verilerle çalışır; backend ve gerçek servisler henüz bağlı değildir. Nihai MVP kapsamı ve sağlayıcı seçimleri açıktır.
 
 ## Başlangıç noktaları
 

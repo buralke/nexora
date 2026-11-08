@@ -6,16 +6,16 @@ Son güncelleme: 2026-11-08
 
 - 25 mevcut taslak ürün/teknik dokümanı `docs/` altında korunuyor.
 - Genel klasör düzeni, çalışma kuralları, prompt ve karar kayıt şablonları oluşturuldu.
-- Uygulama kodu, kurulu servis, bağımlılık, migration veya otomatik test altyapısı henüz yok.
+- Flutter mobil arayüz demosu `apps/mobile/` altında kodlandı: beş sekme, örnek fal akışı ve sosyal etkileşim. Backend, gerçek AI/ödeme/kimlik servisleri ve migration henüz yok.
 - Nihai uygulama adı onaylanmadı; Nexora çalışma alanı adıdır.
 - Kullanıcı önce tüm ürünün ekranlarını ve kullanıcı akışlarını tasarlamayı seçti: [ADR-0001](decisions/ADR-0001-once-urun-tasarimi.md).
-- [Adım adım ilerleme haritası](PROGRESS_MAP.md) oluşturuldu. Ekran tasarımı ve prototip henüz üretilmedi; MVP sınırı ayrıca belirlenecek.
+- [İlerleme haritası](PROGRESS_MAP.md) ve 68 ekranlık envanter mevcut. Kullanıcı navigasyonu onayladı ve kodlamaya geçilmesini istedi: [ADR-0002](decisions/ADR-0002-navigasyon-ve-arayuz.md). İlk çalışan UI dilimi hazır; tüm ekranlar ve MVP tamamlanmış değil.
 
 ## Teknik yönelim ve karar durumu
 
 | Alan | Belgelerdeki yönelim | Durum |
 |---|---|---|
-| Mobil | Flutter / Dart | Mobil mimari belgesinde belirlendi; proje henüz kurulmadı |
+| Mobil | Flutter / Dart | Flutter projesi kuruldu; SDK bileşenleriyle ilk UI dilimi hazır |
 | Mobil yardımcıları | Riverpod, GoRouter, Dio | Öneri |
 | Backend | Python / FastAPI, modüler monolit | Öneri |
 | Veri | PostgreSQL, SQLAlchemy, Alembic | Öneri |
@@ -35,6 +35,6 @@ Genel mimaride TBD görünen bazı tercihler ayrıntılı belgelerde öneri olar
 
 ## Son çalışma ve sonraki adım
 
-Son çalışma: [Ekran envanteri](sessions/2026-11-08-002-ekran-envanteri.md). Repo: [buralke/nexora](https://github.com/buralke/nexora). Çalışma başında ve push öncesinde [repo kontrolü](REPOSITORY.md) uygulanır.
+Son çalışma: [Mobil arayüz](sessions/2026-11-08-003-mobil-arayuz.md). Repo: [buralke/nexora](https://github.com/buralke/nexora). Çalışma başında ve push öncesinde [repo kontrolü](REPOSITORY.md) uygulanır.
 
-USER_FLOWS §18 altında tüm ürünün ekran envanteri taslağı hazır. Sıradaki adım: Envanteri kullanıcıyla incelemek; ardından ana sayfa ve navigasyonu birlikte netleştirmek. Teknik kurulum ve MVP seçimi tasarım incelemesini takip edecek. Mevcut kullanıcı değişikliği olan `docs/UI_UX_GUIDELINES.md` sonundaki ek `2` bu çalışmanın commit kapsamı dışında korunuyor.
+İlk arayüz dilimi hazır. Sıradaki adım: Çalışan ekranları kullanıcıyla incelemek; ardından onboarding/giriş, profil düzenleme ve fal geçmişi görünümlerini kodlamak. Gerçek servisler ve MVP kapsamı açık. `docs/UI_UX_GUIDELINES.md` sonundaki kullanıcıya ait ek `2` korunuyor ve commit dışında.

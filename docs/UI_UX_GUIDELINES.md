@@ -542,4 +542,23 @@ Bileşenler farklı modüllerde tekrar kullanılabilmelidir.
 
 **Bağlantılı dokümanlar:** `PROJECT_OVERVIEW.md`, `APP_FEATURES.md`, `USER_ROLES.md`, `USER_FLOWS.md`, `PRD.md`, `SYSTEM_ARCHITECTURE.md`.
 
-**Geliştirme notu:** Bu doküman, Flutter arayüz geliştirmesinde temel tasarım referansı olacaktır. Nihai renkler ve ekran düzenleri prototipler üzerinden test edilerek kesinleştirilmelidir.
+**Geliştirme notu:** Bu doküman, Flutter arayüz geliştirmesinde temel tasarım referansı olacaktır. Nihai renkler ve ekran düzenleri prototipler üzerinden test edilerek kesinleştirilmelidir.2
+## 21. Sıvı cam uygulama yönü — 2026-11-08
+
+Dayanak: [ADR-0003](../project/decisions/ADR-0003-sivi-cam.md). Kullanıcı camın ağırlıklı kullanıldığı ve renklerin uyumlu olduğu bir tasarım istedi. Aşağıdaki palet mevcut Flutter prototipinde önceki başlangıç paletinin yerini alır; nihai marka onayı değildir.
+
+| Rol | Renk | Kullanım |
+|---|---|---|
+| Gece laciverti | `#0C1020` | Ana zemin |
+| Dumanlı lacivert | `#1B2339` | Yüzey ve semantik surface |
+| İnci lila | `#C3BBF4` | Ana işlem, seçili öğeler |
+| Sis yeşili | `#A5DAD6` | İkincil vurgu ve dekoratif ışık |
+| Şampanya | `#DFD2B5` | Küçük sembol detayları |
+| İnci beyazı | `#F3F4FC` | Ana metin |
+| Gri mavi | `#B9C2D7` | İkincil metin |
+
+Cam malzemesi: panel sınırına kırpılan 16 sigma arka plan bulanıklığı, okunabilirliği koruyan lacivert renk katmanı, ince açık kenar ve yumuşak gölge. Ana kartlar ve yüzen alt gezinme aynı GlassPanel bileşenini paylaşır. Formlar, ikon düğmeleri ve chip'ler geçirgen renk/kenar dilini kullanır; her küçük öğeye blur eklenmez. Gövde metinleri degradenin üzerine doğrudan çok düşük opaklıkla yerleştirilmez.
+
+Arka plan lacivert üzerinde sabit lila/yeşil ışımalar kullanır. Ana sayfadaki yörünge/fincan süslemesi yerel çizimdir; dekoratif olup ekran okuyucudan hariçtir. Sürekli hareket veya yeni görsel/servis bağımlılığı yoktur. Bu uygulama optik kırılma simülasyonu veya yerel Apple Liquid Glass API entegrasyonu değildir.
+
+Büyük metinler satır kırabilir; etiketler sabit genişliğe zorlanmaz. Gerçek cihazlarda blur performansı, kontrast ve daha fazla erişilebilirlik senaryosu yayın öncesinde değerlendirilmelidir. Açık tema bu dilimde uygulanmadı.

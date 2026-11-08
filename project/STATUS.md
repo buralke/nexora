@@ -35,9 +35,9 @@ Genel mimaride TBD görünen bazı tercihler ayrıntılı belgelerde öneri olar
 
 ## Son çalışma ve sonraki adım
 
-Son çalışma: [Dört fikri birleştirme](sessions/2026-11-08-006-dort-fikir.md). Repo: [buralke/nexora](https://github.com/buralke/nexora). Çalışma başında ve push öncesinde [repo kontrolü](REPOSITORY.md) uygulanır.
+Son çalışma: [Tüm dosyaların Git teslimi](sessions/2026-11-08-007-tum-dosyalar-push.md). Repo: [buralke/nexora](https://github.com/buralke/nexora). Çalışma başında ve push öncesinde [repo kontrolü](REPOSITORY.md) uygulanır.
 
-İlk arayüz dilimi sıvı cam yönünde yenilendi: [ADR-0003](decisions/ADR-0003-sivi-cam.md). Ortak cam paneller, yüzen gezinme ve lacivert/lila/sis yeşili paleti uygulandı. Sıradaki adım: Çalışan ekranları kullanıcıyla incelemek; ardından onboarding/giriş, profil düzenleme ve fal geçmişi görünümlerini kodlamak. Gerçek servisler ve MVP kapsamı açık. `docs/UI_UX_GUIDELINES.md` sonundaki kullanıcıya ait ek `2` korunuyor ve commit dışında.
+İlk arayüz dilimi sıvı cam yönünde yenilendi: [ADR-0003](decisions/ADR-0003-sivi-cam.md). Ortak cam paneller, yüzen gezinme ve lacivert/lila/sis yeşili paleti uygulandı. Sıradaki adım: Çalışan ekranları kullanıcıyla incelemek; ardından onboarding/giriş, profil düzenleme ve fal geçmişi görünümlerini kodlamak. Gerçek servisler ve MVP kapsamı açık. `docs/UI_UX_GUIDELINES.md` içindeki kullanıcıya ait ek `2` korundu. Kullanıcının tüm dosyaları pushlama talebiyle rehberin tamamı sıvı cam notlarıyla birlikte Git teslimine alındı.
 
 ## Ürün tartışması
 

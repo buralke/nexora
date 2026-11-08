@@ -1,6 +1,6 @@
 # Güncel proje durumu
 
-Son güncelleme: 2026-11-06
+Son güncelleme: 2026-11-08
 
 ## Mevcut durum
 
@@ -8,6 +8,8 @@ Son güncelleme: 2026-11-06
 - Genel klasör düzeni, çalışma kuralları, prompt ve karar kayıt şablonları oluşturuldu.
 - Uygulama kodu, kurulu servis, bağımlılık, migration veya otomatik test altyapısı henüz yok.
 - Nihai uygulama adı onaylanmadı; Nexora çalışma alanı adıdır.
+- Kullanıcı önce tüm ürünün ekranlarını ve kullanıcı akışlarını tasarlamayı seçti: [ADR-0001](decisions/ADR-0001-once-urun-tasarimi.md).
+- [Adım adım ilerleme haritası](PROGRESS_MAP.md) oluşturuldu. Ekran tasarımı ve prototip henüz üretilmedi; MVP sınırı ayrıca belirlenecek.
 
 ## Teknik yönelim ve karar durumu
 
@@ -33,6 +35,6 @@ Genel mimaride TBD görünen bazı tercihler ayrıntılı belgelerde öneri olar
 
 ## Son çalışma ve sonraki adım
 
-Son çalışma: [GitHub bağlantısı ve senkronizasyon düzeni](sessions/2026-11-06-002-github-senkronizasyonu.md). Repo: [buralke/nexora](https://github.com/buralke/nexora). Çalışma başında ve push öncesinde [repo kontrolü](REPOSITORY.md) uygulanır.
+Son çalışma: [İlerleme haritası](sessions/2026-11-08-001-ilerleme-haritasi.md). Repo: [buralke/nexora](https://github.com/buralke/nexora). Çalışma başında ve push öncesinde [repo kontrolü](REPOSITORY.md) uygulanır.
 
-Önerilen sonraki adım: MVP kapsamını ve ilk teknik kurulumu birlikte netleştirip görev kaydı açmak. Bu adım henüz başlatılmadı.
+Sıradaki adım: Tüm ürünün ayrıntılı ekran envanterini hazırlamak; sonra ana sayfa ve navigasyonu birlikte netleştirmek. Teknik kurulum ve MVP seçimi tasarım incelemesini takip edecek. Mevcut kullanıcı değişikliği olan `docs/UI_UX_GUIDELINES.md` sonundaki ek `2` bu çalışmanın commit kapsamı dışında korunuyor.

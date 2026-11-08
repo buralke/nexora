@@ -11,6 +11,7 @@ Proje planlama aşamasındadır. Bu iskelet çalışan uygulama, kurulmuş servi
 3. [Çalışma ve kayıt düzeni](project/WORKFLOW.md)
 4. [Mevcut ürün vizyonu](docs/PROJECT_OVERVIEW.md) ve [gereksinimler](docs/PRD.md)
 5. [Geliştirme yol haritası](docs/DEVELOPMENT_ROADMAP.md)
+6. [Birlikte izlenecek adım adım ilerleme haritası](project/PROGRESS_MAP.md)
 
 ## Klasör haritası
 

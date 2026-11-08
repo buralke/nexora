@@ -8,6 +8,8 @@
 **Durum:** Uygulama planı taslağı  
 **Planlama yaklaşımı:** Aşamalı teslimat, bağımlılık bazlı geliştirme ve iki haftalık sprintler
 
+**2026-11-08 çalışma sırası kararı:** Önce tüm ürünün ekranları ve kullanıcı akışları tasarlanacak; ardından ilk geliştirilecek sürüm netleştirilecek. [ADR-0001](../project/decisions/ADR-0001-once-urun-tasarimi.md) ve [güncel ilerleme haritası](../project/PROGRESS_MAP.md) bu sırayı izler. Aşağıdaki teknik sprintler taslak referans olarak korunur; süre ve teknoloji onayı değildir.
+
 ---
 
 ## 1. Amaç

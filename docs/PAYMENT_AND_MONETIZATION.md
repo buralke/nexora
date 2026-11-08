@@ -569,3 +569,6 @@ Platform, kullanıcıların fal yorumlarını kesin gelecek tahmini veya profesy
 **Belge Sonu**
 
 **Önemli:** Bu belge bir iş modeli ve teknik ödeme taslağıdır. Gerçek fiyatlar, komisyonlar, ödeme sağlayıcısı ve hukuki süreçler ticari ve hukuki değerlendirmeler sonrasında kesinleştirilmelidir.
+## Destekleyici gelir modeli referansı — 2026-11-08
+
+Kullanıcıdan gelen iki sayfalık [Para Kazanılacak Adımlar PDF](references/Nexora-Para-Kazanilacak-Adimlar.pdf) ve [inceleme/açıklama notları](references/README.md) referans olarak saklanır. Bu belgenin eklenmesi fiyat, kota, reklam veya yayın kapsamı onayı değildir. Günlük ücretsiz ikinci bakış için ADR-0005 ile birlikte okunmalıdır.

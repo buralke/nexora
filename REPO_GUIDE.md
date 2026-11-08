@@ -113,3 +113,7 @@ rg -n 'GlassPanel|Palette' apps/mobile/lib
 `rg --files` normalde ignore edilen üretilmiş dosyaları göstermez. Gerçek `.env`, SDK/bağımlılık önbellekleri, `build/` ve yerel `artifacts/` çıktıları kaynak haritasının parçası değildir; push kapsamı [.gitignore](.gitignore) ve [repo düzeni](project/REPOSITORY.md) ile belirlenir. Flutter oluşturma araçlarına ait `.metadata` ve platform proje dosyaları uygulama klasöründe bulunur.
 
 Bu rehberin bağlantıları dosya/dizin konumlarını gösterir. Ayrıntılı bir kaydı bulmak için ilgili klasörde tarih, ADR veya TASK kimliğini arayın.
+
+## Destekleyici PDF kaynakları
+
+[docs/references](docs/references/README.md), kullanıcıdan gelen destekleyici belgeleri ve güncel kararlardan farklarını barındırır. [Para Kazanılacak Adımlar](docs/references/Nexora-Para-Kazanilacak-Adimlar.pdf) gelir modeli referansıdır; tek başına fiyat/kota veya yayın onayı değildir.

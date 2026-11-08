@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../app/theme.dart';
+import 'glass.dart';
 
 class PageBody extends StatelessWidget {
   const PageBody({super.key, required this.children});
@@ -56,15 +57,9 @@ class SurfaceCard extends StatelessWidget {
   final Widget child;
 
   @override
-  Widget build(BuildContext context) => Container(
-    margin: const EdgeInsets.only(bottom: 14),
-    padding: const EdgeInsets.all(20),
-    decoration: BoxDecoration(
-      color: Palette.surface,
-      borderRadius: BorderRadius.circular(24),
-      border: Border.all(color: Palette.violet.withValues(alpha: .12)),
-    ),
-    child: child,
+  Widget build(BuildContext context) => Padding(
+    padding: const EdgeInsets.only(bottom: 14),
+    child: GlassPanel(padding: const EdgeInsets.all(20), child: child),
   );
 }
 

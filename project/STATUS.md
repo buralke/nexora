@@ -35,6 +35,6 @@ Genel mimaride TBD görünen bazı tercihler ayrıntılı belgelerde öneri olar
 
 ## Son çalışma ve sonraki adım
 
-Son çalışma: [Mobil arayüz](sessions/2026-11-08-003-mobil-arayuz.md). Repo: [buralke/nexora](https://github.com/buralke/nexora). Çalışma başında ve push öncesinde [repo kontrolü](REPOSITORY.md) uygulanır.
+Son çalışma: [Sıvı cam tasarımı](sessions/2026-11-08-004-sivi-cam.md). Repo: [buralke/nexora](https://github.com/buralke/nexora). Çalışma başında ve push öncesinde [repo kontrolü](REPOSITORY.md) uygulanır.
 
-İlk arayüz dilimi hazır. Sıradaki adım: Çalışan ekranları kullanıcıyla incelemek; ardından onboarding/giriş, profil düzenleme ve fal geçmişi görünümlerini kodlamak. Gerçek servisler ve MVP kapsamı açık. `docs/UI_UX_GUIDELINES.md` sonundaki kullanıcıya ait ek `2` korunuyor ve commit dışında.
+İlk arayüz dilimi sıvı cam yönünde yenilendi: [ADR-0003](decisions/ADR-0003-sivi-cam.md). Ortak cam paneller, yüzen gezinme ve lacivert/lila/sis yeşili paleti uygulandı. Sıradaki adım: Çalışan ekranları kullanıcıyla incelemek; ardından onboarding/giriş, profil düzenleme ve fal geçmişi görünümlerini kodlamak. Gerçek servisler ve MVP kapsamı açık. `docs/UI_UX_GUIDELINES.md` sonundaki kullanıcıya ait ek `2` korunuyor ve commit dışında.

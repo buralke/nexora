@@ -76,3 +76,7 @@ Kullanıcı navigasyonu uygun buldu ve arayüz kodlamasını başlattı. İlk Fl
 ## 2026-11-08 — Kullanıcı talimatıyla kodlayarak tasarıma geçiş
 
 [ADR-0002](decisions/ADR-0002-navigasyon-ve-arayuz.md) ile Ana Sayfa/Fal/Keşfet/Sosyal/Profil, üst mesaj ve bildirimler, Keşfet içinde eşleşme girişi onaylandı. Önce tüm tasarım belgelerini bitirme sırası yerini ekranları kodlayıp değerlendirmeye bıraktı. Tablodaki diğer çıktılar ve açık kararlar izlenmeye devam eder; tüm adımlar tamamlanmış sayılmaz. İlk UI dilimi apps/mobile altındadır, gerçek servisler bağlı değildir.
+
+## 2026-11-08 — Sıvı cam tasarım iterasyonu
+
+Kullanıcı talebiyle ilk kod diliminin görsel dili geliştirildi. [ADR-0003](decisions/ADR-0003-sivi-cam.md) ve [TASK-0004](tasks/TASK-0004-sivi-cam.md): ortak cam yüzeyler, renk uyumu ve ana sayfa. Bu çalışma yeni özellik veya MVP kapsamı eklemez. Son oturum: [sıvı cam](sessions/2026-11-08-004-sivi-cam.md).

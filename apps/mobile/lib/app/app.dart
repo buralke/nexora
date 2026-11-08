@@ -6,6 +6,7 @@ import '../features/social/social_page.dart';
 import '../features/profile/profile_page.dart';
 import '../shared/widgets.dart';
 import 'theme.dart';
+import '../shared/glass.dart';
 
 class NexoraApp extends StatelessWidget {
   const NexoraApp({super.key});
@@ -14,6 +15,7 @@ class NexoraApp extends StatelessWidget {
     title: 'Nexora · Arayüz demosu',
     debugShowCheckedModeBanner: false,
     theme: buildTheme(),
+    builder: (context, child) => AuroraBackground(child: child!),
     home: const AppShell(),
   );
 }
@@ -81,12 +83,16 @@ class _AppShellState extends State<AppShell> {
         children: [
           Container(
             width: double.infinity,
-            color: Palette.gold.withValues(alpha: .08),
+            color: Colors.transparent,
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
             child: const Text(
               'Arayüz demosu · Örnek veriler',
               textAlign: TextAlign.center,
-              style: TextStyle(color: Palette.gold, fontSize: 12),
+              style: TextStyle(
+                color: Palette.muted,
+                fontSize: 11,
+                letterSpacing: .6,
+              ),
             ),
           ),
           Expanded(
@@ -106,36 +112,44 @@ class _AppShellState extends State<AppShell> {
         ],
       ),
     ),
-    bottomNavigationBar: NavigationBar(
-      selectedIndex: selected,
-      onDestinationSelected: (index) => setState(() => selected = index),
-      destinations: const [
-        NavigationDestination(
-          icon: Icon(Icons.home_outlined),
-          selectedIcon: Icon(Icons.home),
-          label: 'Ana Sayfa',
+    bottomNavigationBar: SafeArea(
+      top: false,
+      minimum: const EdgeInsets.fromLTRB(14, 8, 14, 12),
+      child: GlassPanel(
+        radius: 28,
+        child: NavigationBar(
+          height: 72,
+          selectedIndex: selected,
+          onDestinationSelected: (index) => setState(() => selected = index),
+          destinations: const [
+            NavigationDestination(
+              icon: Icon(Icons.home_outlined),
+              selectedIcon: Icon(Icons.home),
+              label: 'Ana Sayfa',
+            ),
+            NavigationDestination(
+              icon: Icon(Icons.auto_awesome_outlined),
+              selectedIcon: Icon(Icons.auto_awesome),
+              label: 'Fal',
+            ),
+            NavigationDestination(
+              icon: Icon(Icons.explore_outlined),
+              selectedIcon: Icon(Icons.explore),
+              label: 'Keşfet',
+            ),
+            NavigationDestination(
+              icon: Icon(Icons.people_outline),
+              selectedIcon: Icon(Icons.people),
+              label: 'Sosyal',
+            ),
+            NavigationDestination(
+              icon: Icon(Icons.person_outline),
+              selectedIcon: Icon(Icons.person),
+              label: 'Profil',
+            ),
+          ],
         ),
-        NavigationDestination(
-          icon: Icon(Icons.auto_awesome_outlined),
-          selectedIcon: Icon(Icons.auto_awesome),
-          label: 'Fal',
-        ),
-        NavigationDestination(
-          icon: Icon(Icons.explore_outlined),
-          selectedIcon: Icon(Icons.explore),
-          label: 'Keşfet',
-        ),
-        NavigationDestination(
-          icon: Icon(Icons.people_outline),
-          selectedIcon: Icon(Icons.people),
-          label: 'Sosyal',
-        ),
-        NavigationDestination(
-          icon: Icon(Icons.person_outline),
-          selectedIcon: Icon(Icons.person),
-          label: 'Profil',
-        ),
-      ],
+      ),
     ),
   );
 }

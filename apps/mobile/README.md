@@ -1,6 +1,6 @@
-﻿# Mobil uygulama
+# Mobil uygulama
 
-Flutter arayüz demosu. Beş sekme: Ana Sayfa, Fal, Keşfet, Sosyal ve Profil. Mesaj/bildirim girişleri üst çubuktadır. Tasarım başlangıcı koyu mor/altın paletidir; nihai marka değildir.
+Flutter arayüz demosu. Beş sekme: Ana Sayfa, Fal, Keşfet, Sosyal ve Profil. Mesaj/bildirim girişleri üst çubuktadır. Güncel görsel dil sıvı cam paneller, sabit aurora arka planı ve lacivert/lila/sis yeşili paletidir; nihai marka değildir.
 
 ## Çalıştırma
 
